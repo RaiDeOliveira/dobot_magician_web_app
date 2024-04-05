@@ -10,8 +10,8 @@
 <body>
     <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; align-self: center; text-align: center;">Log de movimentação</h1>
     <div class="div_log">
-        
-        <div hx-get="/conexao" hx-target="#teste" hx-trigger="load"></div>
+
+        <div hx-get="/conexao" hx-target="#teste" hx-trigger="every 2s"></div>
         <div id="teste"></div>
 
         <table class="tabela">
