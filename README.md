@@ -48,4 +48,4 @@ Caso o robô não esteja conectado via USB no seu computador ao iniciar a aplica
 
 ## Vídeo de demonstração
 
-Para ver um vídeo de demonstração do projeto, clique aqui.
+Para ver um vídeo de demonstração do projeto, [clique aqui](https://www.youtube.com/watch?v=10CvLrI98Bc).
