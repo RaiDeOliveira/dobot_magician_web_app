@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+    <link rel="stylesheet" href="../static/log_page.css">
+    <title>Log de movimentação</title>
 </head>
 <body>
-    
+    <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; align-self: center; text-align: center;">Log de movimentação</h1>
+    <div class="div_log">
+        
+        <div hx-get="/conexao" hx-target="#teste" hx-trigger="load"></div>
+        <div id="teste"></div>
+
+        <table class="tabela">
+            <tr>
+                <th>Data e hora</th>
+                <th>Coordenada X</th>
+                <th>Coordenada Y</th>
+                <th>Coordenada Z</th>
+            </tr>
+            {%for log in log_db%}
+            <tr>
+                <td>{{log['horario']}}</td>
+                <td>{{log['X']}}</td>
+                <td>{{log['Y']}}</td>
+                <td>{{log['Z']}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+    </div>
+
 </body>
 </html>

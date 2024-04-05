@@ -1,0 +1,25 @@
+.tabela {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid;
+    border-radius: 10px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div_log {
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    margin-top: 5vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+td {
+    padding: 10px;
+    font-size: large;
+}

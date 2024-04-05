@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+    <link rel="stylesheet" href="../static/main_page.css">
+    <title>Controle do robô</title>
 </head>
+
+
 <body>
-    
+    <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; align-self: center; text-align: center;">Controle do robô</h1>
+    <div class="div_movimentacao">
+        <h2>Movimentação do braço</h2>
+
+        <div hx-get="/conexao" hx-target="#teste" hx-trigger="load"></div>
+        <div id="teste"></div>
+
+
+
+        <p>Insira o valor das coordenadas para as quais você quer que o braço se movimente em cada eixo.</p>
+
+        <form hx-post="/mover_braco" hx-target="#resposta">
+            <input type="text" class="form_input" name="X" placeholder="Coordenada do eixo X"><br>
+            
+            <input type="text" class="form_input" name="Y" placeholder="Coordenada do eixo Y"><br>
+            
+            <input type="text" class="form_input" name="Z" placeholder="Coordenada do eixo Z"><br>
+
+            <button type="submit" class="botao">Mover</button>
+        </form>
+        
+        <a href="http://localhost:8000/logs">Clique aqui para ver os logs de movimentação do robô</a>
+        
+    </div>
+
+    <div id="resposta"></div>
+
+
 </body>
+
+
 </html>
