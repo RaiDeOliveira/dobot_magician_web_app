@@ -50,6 +50,6 @@ if __name__ == "__main__":
     if len(connectedComPorts) > 0:
         robot = Dobot(port=connectedComPorts[0].device)
     else:
-        print("Erro de conexão com o robô")
+        print("==========================\nERRO DE CONEXÃO COM O ROBÔ\n==========================")
 
     app.run(port=8000, host='0.0.0.0')

@@ -46,6 +46,10 @@ A página de dashboard exibe logs de movimentação do robô através de uma tab
 
 Caso o robô não esteja conectado via USB no seu computador ao iniciar a aplicação web, você será redirecionado para a página de dashboard em vez da página principal de controle do robô. Além disso, também há, em ambas as páginas, uma mensagem que informa o usuário se a conexão com o robô está sendo corretamente feita. Essa mensagem atualiza automaticamente a cada 2 segundos.
 
+> **ATENÇÃO**🚨
+> É importante que o robô seja o único dispositivo conectado ao computador via USB.
+> Preferencialmente, também não deve haver nenhum dispositivo conectado ao computador via Bluetooth, pois o programa pode identificar o dispositivo conectado via Bluetooth como o robô, o que pode causar problemas de inicialização e/ou utilização.
+
 ## Vídeo de demonstração
 
 Para ver um vídeo de demonstração do projeto, [clique aqui](https://www.youtube.com/watch?v=10CvLrI98Bc).
